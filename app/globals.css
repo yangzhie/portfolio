@@ -5,3 +5,31 @@
 .writing-mode-vertical {
     writing-mode: vertical-rl;
 }
+
+@layer utilities {
+    .w-40vmin {
+        width: 40vmin;
+    }
+
+    .h-56vmin {
+        height: 56vmin;
+    }
+
+    .gap-4vmin {
+        gap: 4vmin;
+    }
+}
+
+.custom-rounded {
+    border-radius: 50%;
+}
+
+.custom-gradient {
+    background: linear-gradient(90deg, rgba(255, 117, 117, 1) 0%, rgba(251, 171, 126, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.universal-color {
+    background-color: #F08000;
+}

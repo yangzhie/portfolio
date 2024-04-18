@@ -39,7 +39,7 @@ function Sidebar() {
                         document.getElementById("main")?.scrollIntoView() :
                         document.location.hash = ''
                 }}>
-                    <img className="w-[50px]" src="/logo-final-removebg-preview.png" alt="" />
+                    <img className="w-[50px]" src="/logo-final-edited.png" alt="" />
                 </span>
 
                 <motion.a
@@ -50,7 +50,7 @@ function Sidebar() {
                     onClick={() => {
                         setSelected("about")
                     }}
-                    className={`text-slate-800 w-[50px] h-[80px] flex justify-center items-center hover:bg-cyan-900 hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "about" ? "font-bold" : ""}`}
+                    className={`text-[#FFAC1C] w-[50px] h-[80px] flex justify-center items-center hover:bg-[#F08000] hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "about" ? "font-bold" : ""}`}
                 >
                     About
                 </motion.a>
@@ -61,7 +61,7 @@ function Sidebar() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     href="#projects"
                     onClick={() => setSelected("projects")}
-                    className={`text-slate-800 w-[50px] h-[80px] flex justify-center items-center hover:bg-cyan-900 hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "projects" ? "font-bold" : ""}`}
+                    className={`text-[#FFAC1C] w-[50px] h-[80px] flex justify-center items-center hover:bg-[#F08000] hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "projects" ? "font-bold" : ""}`}
                 >
                     Projects
                 </motion.a>
@@ -72,7 +72,7 @@ function Sidebar() {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     href="#experience"
                     onClick={() => setSelected("experience")}
-                    className={`text-slate-800 w-[50px] h-[80px] flex justify-center items-center hover:bg-cyan-900 hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "experience" ? "font-bold" : ""}`}
+                    className={`text-[#FFAC1C] w-[50px] h-[80px] flex justify-center items-center hover:bg-[#F08000] hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "experience" ? "font-bold" : ""}`}
                 >
                     Exp.
                 </motion.a>
@@ -83,7 +83,7 @@ function Sidebar() {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     href="#contact"
                     onClick={() => setSelected("contact")}
-                    className={`text-slate-800 w-[50px] h-[80px] flex justify-center items-center hover:bg-cyan-900 hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "contact" ? "font-bold" : ""}`}
+                    className={`text-[#FFAC1C] w-[50px] h-[80px] flex justify-center items-center hover:bg-[#F08000] hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "contact" ? "font-bold" : ""}`}
                 >
                     Contact
                 </motion.a>

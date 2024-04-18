@@ -25,7 +25,7 @@ function Hero() {
                 <div className='grid'>
                     <motion.h1
                         style={{ y: textY }}
-                        className='font-bold text-white text-7xl md:text-9xl relative z-[60]'>
+                        className='font-bold text-[#FFAC1C] text-7xl md:text-9xl relative z-[60]'>
                         Arnav
                     </motion.h1>
 

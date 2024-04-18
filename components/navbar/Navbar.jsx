@@ -66,7 +66,7 @@ function Navbar() {
                     </motion.span>
                 </div>
 
-                <button className='cursor-pointer ml-auto border border-blue-300 rounded-md py-1 px-2 text-cyan-400 hover:text-white transition ease-in-out delay-50'
+                <button className='cursor-pointer ml-auto border border-white rounded-md py-1 px-2 text-[#FFAC1C] hover:text-white transition ease-in-out delay-50'
                     onClick={() => window.open("/")}
                 >
                     <div className='flex items-center gap-x-1.5 text-sm'>
