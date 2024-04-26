@@ -23,7 +23,7 @@ function Contact() {
 
     return (
         <>
-            <div className='flex flex-col relative bg-slate-800'>
+            <div className='flex flex-col relative bg-slate-800 ml-[15px]'>
 
                 <div className='z-0'>
                     <StarsCanvas />

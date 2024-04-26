@@ -6,6 +6,8 @@ import SplitText from "gsap-trial/SplitText"
 import { Reveal } from '../utils/Reveal'
 gsap.registerPlugin(SplitText)
 
+import Slideshow from '../slideshow/Slideshow'
+
 function About() {
     const titlesRef = useRef(null);
 
@@ -35,7 +37,6 @@ function About() {
     return (
         <>
             <div className='relative flex items-center justify-center bg-slate-800 h-screen ml-[50px]'>
-
                 <div className='flex items-center content-center'>
                     <div className='flex flex-col w-[600px]'>
                         <div className='text-[25px] mb-[20px] font-medium'>
