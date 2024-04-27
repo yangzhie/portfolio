@@ -1,7 +1,10 @@
+"use client"
+
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai"
 import { technologies } from '../utils/index'
+import { motion, useAnimation, useInView } from 'framer-motion'
 
 function ProjectCard({
     projectLink,
@@ -11,9 +14,41 @@ function ProjectCard({
     description,
     techIcons
 }) {
+
+    const ref = useRef(null)
+
+    const inView = useInView(ref, { once: true })
+    const controls = useAnimation()
+
+    useEffect(() => {
+        if (inView) {
+            controls.start('visible')
+        } else {
+            controls.start('hidden')
+        }
+    }, [controls, inView])
+
+    const variants = {
+        hidden: {
+            y: '30%',
+            opacity: 0,
+        },
+        visible: {
+            y: 0,
+            opacity: 1,
+        },
+    }
+
     return (
         <>
-            <div className='flex flex-col main-container w-[400px] h-[600px] p-2 bg-slate-900 border-2 border-white rounded bg-gradient-to-t from-amber-600/15 to-transparent'>
+            <motion.div
+                ref={ref}
+                initial="hidden"
+                animate={controls}
+                variants={variants}
+                transition={{ type: 'tween', delay: 0.3, duration: 1 }}
+                className='flex flex-col main-container w-[400px] h-[600px] p-2 border-2 border-amber-600 bg-slate-900 rounded bg-gradient-to-t from-white/10 to-transparent'
+            >
                 <div className=''>
                     <div className='flex absolute z-100 p-2'>
                         <div>
@@ -36,7 +71,7 @@ function ProjectCard({
 
                 <div className='flex flex-col'>
                     <div className='flex p-2 items-center'>
-                        <h4 className='flex w-full justify-between text-amber-600 text-3xl font-bold'>
+                        <h4 className='shrikhand flex w-full justify-between text-amber-600 text-3xl'>
                             {title}
                         </h4>
                         <div className='w-full h-px bg-white m-[15px]' />
@@ -59,7 +94,7 @@ function ProjectCard({
                         })}
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

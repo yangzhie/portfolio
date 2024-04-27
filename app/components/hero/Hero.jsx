@@ -21,17 +21,17 @@ function Hero() {
                 ref={ref}
                 className='w-full h-screen overflow-hidden relative grid place-items-center'
             >
-
                 <div className='grid'>
                     <motion.h1
                         style={{ y: textY }}
-                        className='font-bold text-[#FFAC1C] text-7xl md:text-9xl relative z-[60]'>
+                        className='shrikhand text-[#FFAC1C] md:text-9xl relative z-[60]'
+                    >
                         Arnav
                     </motion.h1>
 
                     <motion.h2
                         style={{ y: textY }}
-                        className='font-light text-white text-6xl relative z-[70] mb-[200px] text-center'>
+                        className='shrikhand text-white text-6xl relative z-[70] mb-[200px] text-center'>
                         Malasi
                     </motion.h2>
                 </div>
@@ -39,7 +39,7 @@ function Hero() {
                 <motion.div
                     className='absolute inset-0 z-0'
                     style={{
-                        backgroundImage: `url(/background.jpg)`,
+                        backgroundImage: `url(/hero-images/background.jpg)`,
                         backgroundPosition: "bottom",
                         backgroundSize: "cover",
                         y: backgroundY,
@@ -49,13 +49,13 @@ function Hero() {
                 <div
                     className='absolute inset-0 z-[900]'
                     style={{
-                        backgroundImage: `url(/bottom-img.png)`,
+                        backgroundImage: `url(/hero-images/bottom-img.png)`,
                         backgroundPosition: "bottom",
                         backgroundSize: "cover",
                         y: backgroundY,
                     }}
                 />
-            </div>
+            </div >
         </>
     )
 }

@@ -1,7 +1,8 @@
 "use client"
 
-import React, { use, useState } from 'react'
-import { AiOutlineSend } from 'react-icons/ai';
+import React, { useState, useEffect, useRef } from 'react'
+import { AiOutlineSend } from 'react-icons/ai'
+import { motion, useAnimation, useInView } from 'framer-motion'
 
 function ContactForm() {
 
@@ -37,6 +38,30 @@ function ContactForm() {
             setEmail("")
             setMessage("")
         }
+    }
+
+    const ref = useRef(null)
+
+    const inView = useInView(ref, { once: true })
+    const controls = useAnimation()
+
+    useEffect(() => {
+        if (inView) {
+            controls.start('visible')
+        } else {
+            controls.start('hidden')
+        }
+    }, [controls, inView])
+
+    const variants = {
+        hidden: {
+            x: '10%',
+            opacity: 0,
+        },
+        visible: {
+            x: 0,
+            opacity: 1,
+        },
     }
 
     return (
@@ -90,14 +115,21 @@ function ContactForm() {
                 />
             </label>
 
-            <div className='flex items-end justify-end'>
+            <motion.div
+                ref={ref}
+                initial="hidden"
+                animate={controls}
+                variants={variants}
+                transition={{ type: 'tween', delay: 2, duration: 1 }}
+                className='flex items-end justify-end'
+            >
                 <button
                     type='submit'
                     className='flex flex-col mt-[10px] w-[40px] items-end font-bold text-orange-500 hover:text-orange-400 transition ease-in-out delay-100'
                 >
                     Send
                 </button>
-            </div>
+            </motion.div>
 
             <div className='flex flex-col'>
                 {

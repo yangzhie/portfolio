@@ -32,25 +32,36 @@ function Sidebar() {
                 initial={{ x: -70 }}
                 animate={{ x: 0 }}
                 transition={{ duration: 0.5 }}
-                className='writing-mode-vertical h-[600px] flex flex-row items-center content-center justify-between mt-[7px]'
+                className='writing-mode-vertical h-[600px] flex flex-row items-center content-center justify-between mt-[20px]'
             >
-                <span className='text-white text-lg font-bold cursor-pointer' onClick={() => {
+                <span className='text-amber-400 text-lg font-bold cursor-pointer -rotate-90' onClick={() => {
                     document.location.hash === "" ?
                         document.getElementById("main")?.scrollIntoView() :
                         document.location.hash = ''
                 }}>
-                    <img className="w-[50px]" src="/logo-final-edited.png" alt="" />
+                    AM
                 </span>
 
                 <motion.a
                     initial={{ x: -70 }}
                     animate={{ x: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
-                    href="#about"
+                    href="#home"
                     onClick={() => {
-                        setSelected("about")
+                        setSelected("home")
                     }}
-                    className={`text-[#FFAC1C] w-[50px] h-[80px] flex justify-center items-center hover:bg-[#F08000] hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "about" ? "font-bold" : ""}`}
+                    className={`text-[#FFAC1C] w-[50px] h-[80px] font-bold flex justify-center items-center hover:bg-[#F08000] hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "home" ? "font-extrabold" : ""}`}
+                >
+                    Home
+                </motion.a>
+
+                <motion.a
+                    initial={{ x: -70 }}
+                    animate={{ x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    href="#about"
+                    onClick={() => setSelected("about")}
+                    className={`text-[#FFAC1C] w-[50px] h-[80px] font-bold flex justify-center items-center hover:bg-[#F08000] hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "about" ? "font-extrabold" : ""}`}
                 >
                     About
                 </motion.a>
@@ -58,23 +69,12 @@ function Sidebar() {
                 <motion.a
                     initial={{ x: -70 }}
                     animate={{ x: 0 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
                     href="#projects"
                     onClick={() => setSelected("projects")}
-                    className={`text-[#FFAC1C] w-[50px] h-[80px] flex justify-center items-center hover:bg-[#F08000] hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "projects" ? "font-bold" : ""}`}
+                    className={`text-[#FFAC1C] w-[50px] h-[80px] font-bold flex justify-center items-center hover:bg-[#F08000] hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "projects" ? "font-extrabold" : ""}`}
                 >
                     Projects
-                </motion.a>
-
-                <motion.a
-                    initial={{ x: -70 }}
-                    animate={{ x: 0 }}
-                    transition={{ duration: 0.5, delay: 0.3 }}
-                    href="#experience"
-                    onClick={() => setSelected("experience")}
-                    className={`text-[#FFAC1C] w-[50px] h-[80px] flex justify-center items-center hover:bg-[#F08000] hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "experience" ? "font-bold" : ""}`}
-                >
-                    Exp.
                 </motion.a>
 
                 <motion.a
@@ -83,7 +83,7 @@ function Sidebar() {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     href="#contact"
                     onClick={() => setSelected("contact")}
-                    className={`text-[#FFAC1C] w-[50px] h-[80px] flex justify-center items-center hover:bg-[#F08000] hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "contact" ? "font-bold" : ""}`}
+                    className={`text-[#FFAC1C] w-[50px] h-[80px] font-bold flex justify-center items-center hover:bg-[#F08000] hover:opacity-70 hover:text-white transition ease-in-out delay-80 ${selected === "contact" ? "font-extrabold" : ""}`}
                 >
                     Contact
                 </motion.a>

@@ -1,5 +1,9 @@
 // export const navLinks = [
 //     {
+//         id: "home",
+//         title: "Home",
+//     },
+//     {
 //         id: "about",
 //         title: "About",
 //     },
@@ -8,14 +12,10 @@
 //         title: "Projects",
 //     },
 //     {
-//         id: "work",
-//         title: "Work",
-//     },
-//     {
 //         id: "contact",
 //         title: "Contact",
 //     },
-// ];
+// ]
 
 const technologies = [
     {
@@ -96,7 +96,7 @@ const projects = [
     {
         projectLink: "https://github.com/yangzhie/portfolio",
         liveSiteLink: "google.com",
-        projectImageLink: "/portfolio.PNG",
+        projectImageLink: "/project-images/portfolio.PNG",
         title: "Portfolio",
         description:
             "A web showcase driven by React and Javascript. Featuring a starry landing page, web/app services, and projects with TailwindCSS. Immerse in 3D, toggle dark mode, and connect seamlessly. A fusion of tech and creativity. I expanded my expertise in UX/UI, responsive design, and API-driven headless CMS while crafting this project.",
@@ -105,7 +105,7 @@ const projects = [
     {
         projectLink: "https://github.com/yangzhie/under-crypto",
         liveSiteLink: "google.com",
-        projectImageLink: "/under.PNG",
+        projectImageLink: "/project-images/under.PNG",
         title: "UnderCrypto",
         description:
             "UnderCrypto is a cryptocurrency exchange with a user-friendly GUI. It is an SPA built using ReactJS + Vite. Using multiple APIs to fetch cryptocurrency data, it displays various statistics of any cryptocurrency. It has a functional homepage, coin page (which displays the statistics about the coin along with news) and a watchlist page, where you can view what coins you have added to be tracked.",
@@ -114,7 +114,7 @@ const projects = [
     {
         projectLink: "https://github.com/yangzhie/pipeline",
         liveSiteLink: "google.com",
-        projectImageLink: "/pipeline.PNG",
+        projectImageLink: "/project-images/pipeline.PNG",
         title: "Servo App",
         description:
             "The Servo App, a collaborative project by a team of five, focuses on creating an intuitive Single Page Application (SPA) for locating petrol stations via geographical coordinates. It utilizes JavaScript, Node.js, Express, Postgres, and RESTful APIs to offer users a comprehensive experience, pinpointing fuel stations and providing insights into fuel pricing and station statistics.",
@@ -123,7 +123,7 @@ const projects = [
     {
         projectLink: "https://github.com/yangzhie/alabaster-alt",
         liveSiteLink: "google.com",
-        projectImageLink: "/alabaster.png",
+        projectImageLink: "/project-images/alabaster.png",
         title: "Alabaster",
         description:
             "This application is an alternative site to alabaster.industries. It is a multi-page CRUD app made using Express and NodeJS. It is styled different to the original website but has added features for the administrators to post/edit and delete products. It also has a sign-up feature for new users to view the site. The site was designed in a way that it would be a permium, invite-only site, thus the site's layout and design.",
@@ -132,7 +132,7 @@ const projects = [
     {
         projectLink: "https://github.com/yangzhie/tictactoe",
         liveSiteLink: "google.com",
-        projectImageLink: "/tictactoe.png",
+        projectImageLink: "/project-images/tictactoe.png",
         title: "Tic Tac Toe",
         description:
             "This project presents a contemporary take on the classic 'Tic-Tac-Toe' game. Crafted with HTML, CSS, and JavaScript, it seamlessly combines modern gaming experience with the enduring appeal of the original. It's easy to play: select a cell, take turns marking 'X' or 'O,' and aim to achieve a row of three. Enjoy this blend of nostalgia and modern gaming convenience.",
@@ -147,7 +147,7 @@ const projects = [
             "Coding Collaborator.",
         techIcons: ["HTML 5", "Typescript", "React JS", "Next JS", "Express", "MongoDB", "Tailwind CSS"]
     },
-];
+]
 
 // const contacts = [
 //     {
@@ -165,6 +165,6 @@ const projects = [
 //         name: "linkedin.com/in/arnavmalasi",
 //         url: "https://www.linkedin.com/in/arnavmalasi/",
 //     },
-// ];
+// ]
 
 export { technologies, projects }

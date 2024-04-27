@@ -4,17 +4,17 @@ import React from 'react'
 
 import {
     AiFillLinkedin,
-    AiFillGithub,
-    AiFillFilePdf,
+    AiFillGithub
 } from "react-icons/ai"
 
-import { FaDiscord, FaInbox } from "react-icons/fa"
+import { FaDiscord } from "react-icons/fa"
 
 import Link from "next/link"
 
 import { motion } from "framer-motion"
 
 import { CopyToClipboard } from 'react-copy-to-clipboard'
+import Button from '../utils/Button'
 
 function Navbar() {
 
@@ -66,14 +66,13 @@ function Navbar() {
                     </motion.span>
                 </div>
 
-                <button className='cursor-pointer ml-auto border border-white rounded-md py-1 px-2 text-[#FFAC1C] hover:text-white transition ease-in-out delay-50'
-                    onClick={() => window.open("/")}
+                <motion.span
+                    initial={{ y: -30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    <div className='flex items-center gap-x-1.5 text-sm'>
-                        resume
-                        <FaInbox />
-                    </div>
-                </button>
+                    <Button />
+                </motion.span>
             </nav>
         </>
     )
