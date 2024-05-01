@@ -1,10 +1,11 @@
 "use client"
 
-import Link from 'next/link'
 import React, { useEffect, useRef } from 'react'
-import { AiFillGithub, AiOutlineExport } from "react-icons/ai"
-import { technologies } from '../utils/index'
+import Link from 'next/link'
 import { motion, useAnimation, useInView } from 'framer-motion'
+import { technologies } from '../utils/index'
+
+import { AiFillGithub, AiOutlineExport } from "react-icons/ai"
 
 function ProjectCard({
     projectLink,
@@ -71,7 +72,7 @@ function ProjectCard({
 
                 <div className='flex flex-col'>
                     <div className='flex p-2 items-center'>
-                        <h4 className='shrikhand flex w-full justify-between text-amber-600 text-3xl'>
+                        <h4 className='rubik flex w-full justify-between text-amber-600 text-3xl'>
                             {title}
                         </h4>
                         <div className='w-full h-px bg-white m-[15px]' />

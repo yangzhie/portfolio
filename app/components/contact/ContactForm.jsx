@@ -1,8 +1,9 @@
 "use client"
 
 import React, { useState, useEffect, useRef } from 'react'
-import { AiOutlineSend } from 'react-icons/ai'
 import { motion, useAnimation, useInView } from 'framer-motion'
+
+import { AiOutlineSend } from 'react-icons/ai'
 
 function ContactForm() {
 

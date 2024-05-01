@@ -1,22 +1,3 @@
-// export const navLinks = [
-//     {
-//         id: "home",
-//         title: "Home",
-//     },
-//     {
-//         id: "about",
-//         title: "About",
-//     },
-//     {
-//         id: "projects",
-//         title: "Projects",
-//     },
-//     {
-//         id: "contact",
-//         title: "Contact",
-//     },
-// ]
-
 const technologies = [
     {
         name: "HTML 5",
@@ -148,23 +129,5 @@ const projects = [
         techIcons: ["HTML 5", "Typescript", "React JS", "Next JS", "Express", "MongoDB", "Tailwind CSS"]
     },
 ]
-
-// const contacts = [
-//     {
-//         id: "email",
-//         name: "arnavmalasi2212@gmail.com",
-//         url: "mailto:arnavmalasi2212@gmail.com",
-//     },
-//     {
-//         id: "github",
-//         name: "github.com/yangzhie",
-//         url: "https://github.com/yangzhie",
-//     },
-//     {
-//         id: "linkedin",
-//         name: "linkedin.com/in/arnavmalasi",
-//         url: "https://www.linkedin.com/in/arnavmalasi/",
-//     },
-// ]
 
 export { technologies, projects }

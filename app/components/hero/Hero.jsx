@@ -19,19 +19,20 @@ function Hero() {
         <>
             <div
                 ref={ref}
-                className='w-full h-screen overflow-hidden relative grid place-items-center'
+                id='home'
+                className='section-wrapper w-full h-screen overflow-hidden relative grid place-items-center'
             >
                 <div className='grid'>
                     <motion.h1
                         style={{ y: textY }}
-                        className='shrikhand text-[#FFAC1C] md:text-9xl relative z-[60]'
+                        className='rubik text-[#FFAC1C] md:text-9xl relative z-[60]'
                     >
                         Arnav
                     </motion.h1>
 
                     <motion.h2
                         style={{ y: textY }}
-                        className='shrikhand text-white text-6xl relative z-[70] mb-[200px] text-center'>
+                        className='rubik text-white text-6xl relative z-[70] mb-[200px] text-center'>
                         Malasi
                     </motion.h2>
                 </div>

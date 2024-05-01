@@ -1,20 +1,13 @@
 "use client"
 
 import React from 'react'
-
-import {
-    AiFillLinkedin,
-    AiFillGithub
-} from "react-icons/ai"
-
-import { FaDiscord } from "react-icons/fa"
-
 import Link from "next/link"
-
 import { motion } from "framer-motion"
-
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import Button from '../utils/Button'
+
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai"
+import { FaDiscord } from "react-icons/fa"
 
 function Navbar() {
 
