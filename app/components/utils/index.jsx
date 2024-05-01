@@ -80,7 +80,7 @@ const projects = [
         projectImageLink: "/project-images/portfolio.PNG",
         title: "Portfolio",
         description:
-            "A web showcase driven by React and Javascript. Featuring a starry landing page, web/app services, and projects with TailwindCSS. Immerse in 3D, toggle dark mode, and connect seamlessly. A fusion of tech and creativity. I expanded my expertise in UX/UI, responsive design, and API-driven headless CMS while crafting this project.",
+            "A web showcase driven by NextJS, React and Javascript. Featuring an eye-capturing landing page, web/app services, and projects with TailwindCSS. Immerse in 3D and connect seamlessly. A fusion of tech and creativity. I expanded my expertise in UX/UI, responsive design, and API-driven headless CMS while crafting this project.",
         techIcons: ["HTML 5", "JavaScript", "React JS", "Next JS", "MongoDB", "Tailwind CSS", "Framer Motion"]
     },
     {

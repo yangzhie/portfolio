@@ -5,7 +5,7 @@ import Navbar from "./components/navbar/Navbar"
 import Projects from "./components/projects/Projects"
 import Sidebar from "./components/sidebar/Sidebar"
 
-export default function Home() {
+function Home() {
   return (
     <>
       <Navbar />
@@ -17,3 +17,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home
