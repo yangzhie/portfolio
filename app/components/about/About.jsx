@@ -1,8 +1,12 @@
 "use client"
 
 import React from 'react'
+import Image from 'next/image'
+
 import { Reveal } from '../utils/Reveal'
 import StarsCanvas from '../utils/Stars'
+
+import pfp from '@/public/profile-picture.png'
 
 function About() {
     return (
@@ -23,7 +27,7 @@ function About() {
                         <div className='flex flex-col w-[600px]'>
                             <div className='text-[25px] mb-[20px] font-medium'>
                                 <div className='text-white'>
-                                    I'm a
+                                    I&apos;m a
                                 </div>
                                 <div
                                     className='leading-[0] mb-[20px]'
@@ -36,7 +40,7 @@ function About() {
 
                             <div className='text-white'>
 
-                                <Reveal>Based in <span className='custom-gradient font-bold'>Melbourne</span>, I'm a Bachelor of Science Mathematics and Chemistry</Reveal>
+                                <Reveal>Based in <span className='custom-gradient font-bold'>Melbourne</span>, I&apos;m a Bachelor of Science Mathematics and Chemistry</Reveal>
                                 <Reveal>graduate from Monash University.</Reveal>
                                 <br />
                                 <br />
@@ -49,18 +53,22 @@ function About() {
                                 <Reveal>expertiseand contemporary software development.</Reveal>
                                 <br />
                                 <br />
-                                <Reveal>When I'm not immersed in code, you'll find me playing some <span className='custom-gradient font-bold'>competitive chess</span>,</Reveal>
+                                <Reveal>When I&apos;m not immersed in code, you&apos;ll find me playing some <span className='custom-gradient font-bold'>competitive chess</span>,</Reveal>
                                 <Reveal>rockclimbing (as best as I can!), exploring new hiking trails or playing some</Reveal>
                                 <Reveal>video games with friends.</Reveal>
                                 <br />
                                 <br />
-                                <Reveal>I'm always eager to expand my <span className='custom-gradient font-bold' >network</span> within the industry, so please don't</Reveal>
+                                <Reveal>I&apos;m always eager to expand my <span className='custom-gradient font-bold'>network</span> within the industry, so please don&apos;t</Reveal>
                                 <Reveal> hesitate to reach out and connect!</Reveal>
                             </div>
                         </div>
 
                         <div className='ml-[50px]'>
-                            <img src="/profile-picture.png" className='h-[300px] w-[300px] relative z-[600]' />
+                            <Image
+                                src={pfp}
+                                className='h-[300px] w-[300px] relative z-[600]'
+                                alt='Profile picture'
+                            />
 
                             <span className='universal-color animate-pulse custom-rounded h-[300px] w-[300px] absolute transform translate-x-[5%] translate-y-[-95%] z-[599]'></span>
                         </div>

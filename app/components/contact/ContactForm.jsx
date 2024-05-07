@@ -134,8 +134,9 @@ function ContactForm() {
 
             <div className='flex flex-col'>
                 {
-                    error && error.map((e) =>
+                    error && error.map((e, idx) =>
                         <div
+                            key={idx}
                             className={
                                 `${success ? 'text-green-800' : 'text-red-600'} flex justify-end h-[20px] w[50px]`
                             }
