@@ -48,7 +48,7 @@ function ProjectCard({
                 animate={controls}
                 variants={variants}
                 transition={{ type: 'tween', delay: 0.3, duration: 1 }}
-                className='flex flex-col main-container w-[400px] h-[600px] p-2 border-2 border-amber-600 bg-slate-900 rounded bg-gradient-to-t from-white/10 to-transparent'
+                className='flex flex-col main-container w-[400px] h-[600px] p-2 border-2 border-slate-900 bg-slate-900 rounded bg-gradient-to-t from-white/10 to-transparent'
             >
                 <div className=''>
                     <div className='flex absolute z-100 p-2'>

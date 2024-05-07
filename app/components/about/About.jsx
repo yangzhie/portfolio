@@ -1,38 +1,10 @@
 "use client"
 
-import React, { useEffect, useRef } from 'react'
-import gsap from 'gsap'
+import React from 'react'
 import { Reveal } from '../utils/Reveal'
-import SplitText from 'gsap-trial/SplitText'
 import StarsCanvas from '../utils/Stars'
-gsap.registerPlugin(SplitText)
 
 function About() {
-    const titlesRef = useRef(null)
-
-    useEffect(() => {
-        const titles = titlesRef.current.querySelectorAll('.title')
-        const timeline = gsap.timeline({ repeat: -1 })
-
-        titles.forEach(title => {
-            const splitTitle = new SplitText(title)
-
-            timeline
-                .from(splitTitle.chars, {
-                    opacity: 0,
-                    y: 30,
-                    rotateX: -90,
-                    stagger: 0.02
-                }, "<")
-                .to(splitTitle.chars, {
-                    opacity: 0,
-                    y: -30,
-                    rotateX: 90,
-                    stagger: 0.02
-                }, "<1")
-        });
-    }, [titlesRef.current])
-
     return (
         <>
             <div className="section-wrapper" id='about'>
@@ -54,17 +26,10 @@ function About() {
                                     I'm a
                                 </div>
                                 <div
-                                    ref={titlesRef}
                                     className='leading-[0] mb-[20px]'
                                 >
-                                    <span className='title text-[30px] font-bold text-orange-300'>
-                                        Frontend Developer
-                                    </span>
-                                    <span className='title text-[30px] font-bold text-orange-400'>
-                                        Backend Developer
-                                    </span>
-                                    <span className='title text-[30px] font-bold text-orange-500'>
-                                        Software Engineer
+                                    <span className='title text-[30px] font-bold custom-gradient'>
+                                        Software Developer
                                     </span>
                                 </div>
                             </div>

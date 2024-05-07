@@ -23,9 +23,8 @@ function Projects() {
                 <div className='flex flex-wrap justify-center bg-slate-800 ml-[50px]'>
                     <StarsCanvas />
                     {projects.map((project, idx) => (
-                        <div className='flex p-5'>
+                        <div key={idx} className='flex p-5'>
                             <ProjectCard
-                                key={idx}
                                 projectLink={project.projectLink}
                                 liveSiteLink={project.liveSiteLink}
                                 projectImageLink={project.projectImageLink}
