@@ -76,7 +76,7 @@ const technologies = [
 const projects = [
     {
         projectLink: "https://github.com/yangzhie/portfolio",
-        liveSiteLink: "google.com",
+        liveSiteLink: "https://arnavmalasi.vercel.app",
         projectImageLink: "/project-images/portfolio.PNG",
         title: "Portfolio",
         description:
@@ -85,7 +85,7 @@ const projects = [
     },
     {
         projectLink: "https://github.com/yangzhie/under-crypto",
-        liveSiteLink: "google.com",
+        liveSiteLink: "https://under-crypto.vercel.app/",
         projectImageLink: "/project-images/under.PNG",
         title: "UnderCrypto",
         description:
@@ -94,7 +94,7 @@ const projects = [
     },
     {
         projectLink: "https://github.com/yangzhie/pipeline",
-        liveSiteLink: "google.com",
+        liveSiteLink: "/",
         projectImageLink: "/project-images/pipeline.PNG",
         title: "Servo App",
         description:
@@ -103,7 +103,7 @@ const projects = [
     },
     {
         projectLink: "https://github.com/yangzhie/alabaster-alt",
-        liveSiteLink: "google.com",
+        liveSiteLink: "http://alabaster-alt.onrender.com",
         projectImageLink: "/project-images/alabaster.png",
         title: "Alabaster",
         description:
@@ -112,7 +112,7 @@ const projects = [
     },
     {
         projectLink: "https://github.com/yangzhie/tictactoe",
-        liveSiteLink: "google.com",
+        liveSiteLink: "https://yangzhie.github.io/tictactoe",
         projectImageLink: "/project-images/tictactoe.png",
         title: "Tic Tac Toe",
         description:
